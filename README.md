@@ -40,13 +40,12 @@ project-folder/
 
 | | |
 |---|---|
-| **Name** | Your Full Name |
-| **Role** | Developer / Student |
-| **Email** | your.email@example.com |
-| **Phone** | +94 XX XXX XXXX |
-| **Location** | Colombo, Sri Lanka |
-| **GitHub** | https://github.com/your-username |
-| **LinkedIn** | https://linkedin.com/in/your-profile |
+| **Name** | Shahan Vimukthi |
+| **Role** |  Student |
+| **Email** | shahanpublicmail@gmail.com |
+| **University** | Rajarata University Of Sri Lanka |
+| **GitHub** | https://github.com/Shahanvimukthi |
+| **LinkedIn** | https://www.linkedin.com/in/shahan-vimukthi-6a52652a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app |
 
 > Replace the values above with your own details.
 
