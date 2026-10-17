@@ -179,7 +179,7 @@ The URL stays the same.
 ## Troubleshooting
 
 | Problem | Fix |
-|---------|-----|
+|---------|-----| 
 | Network or CORS error | Set access to **Anyone** and use the `/exec` URL, not `/dev` |
 | Script changes have no effect | Deploy a **New version** (see above) |
 | `Unexpected token <` error | The script returned an HTML error page. Recheck the deployment and make sure `doPost` exists |
