@@ -47,7 +47,7 @@ project-folder/
 | **GitHub** | https://github.com/Shahanvimukthi |
 | **LinkedIn** | https://www.linkedin.com/in/shahan-vimukthi-6a52652a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app |
 
-> Replace the values above with your own details.
+
 
 ---
 
