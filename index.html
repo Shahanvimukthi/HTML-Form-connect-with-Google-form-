@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google reCAPTCHA v2 (replace data-sitekey below with your own key) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <main class="page">
-    <div class="card">
-      <h1 class="card__title">Contact Us</h1>
+  <div class="stage">
+    <div class="back back-right"></div>
+    <div class="back back-left"></div>
+
+    <main class="card">
+      <h1>CONTACT US</h1>
 
       <form id="contactForm" novalidate>
         <div class="row">
           <div class="field">
             <label for="firstName">First Name <span class="req">*</span></label>
-            <input type="text" id="firstName" name="firstName" autocomplete="given-name" required />
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
             <small class="error" data-for="firstName"></small>
           </div>
           <div class="field">
             <label for="lastName">Last Name <span class="req">*</span></label>
-            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required />
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
             <small class="error" data-for="lastName"></small>
           </div>
         </div>
@@ -30,26 +34,20 @@
         <div class="row">
           <div class="field">
             <label for="email">Email <span class="req">*</span></label>
-            <input type="email" id="email" name="email" autocomplete="email" required />
+            <input type="email" id="email" name="email" autocomplete="email" required>
             <small class="error" data-for="email"></small>
           </div>
           <div class="field">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
             <small class="error" data-for="phone"></small>
           </div>
         </div>
 
-        <fieldset class="field radio-group">
+        <fieldset class="field contact-method">
           <legend>Preferred Method of Contact <span class="req">*</span></legend>
-          <label class="radio">
-            <input type="radio" name="contactMethod" value="Email" />
-            <span>Email</span>
-          </label>
-          <label class="radio">
-            <input type="radio" name="contactMethod" value="Phone" />
-            <span>Phone</span>
-          </label>
+          <label class="radio"><input type="radio" name="contactMethod" value="Email"> <span>Email</span></label>
+          <label class="radio"><input type="radio" name="contactMethod" value="Phone"> <span>Phone</span></label>
           <small class="error" data-for="contactMethod"></small>
         </fieldset>
 
@@ -58,16 +56,17 @@
           <textarea id="inquiry" name="inquiry" rows="5"></textarea>
         </div>
 
-        <div class="field">
-          <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+        <div class="captcha">
+          <!-- Replace with your reCAPTCHA v2 SITE key -->
+          <div class="g-recaptcha" data-sitekey="PASTE_YOUR_RECAPTCHA_SITE_KEY"></div>
           <small class="error" data-for="captcha"></small>
         </div>
 
-        <button type="submit" class="btn" id="submitBtn">Get in touch</button>
-        <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+        <button type="submit" id="submitBtn">GET IN TOUCH</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
       </form>
-    </div>
-  </main>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
